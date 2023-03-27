@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,26 +7,21 @@
   </head>
   <body>
     <h1>ChatGPT Web App</h1>
-      <div id="responseContainer">
-        <p class="api-key-note">
-          Get your API key from
-          <a href="https://platform.openai.com/account/api-keys" target="_blank" rel="noopener noreferrer">
-            here
-          </a>
-        </p>
-
-      </div>
-        <!-- APIキーの取得元を追加 -->
-        <div id="apiKeyContainer">
-          <form id="apiKeyForm">
-            <input type="password" id="apiKeyInput" placeholder="YOUR OPENAI API KEY"/>
-            <button type="submit">Set</button>    
-          </form>
-        </div>
-        <div id="messageContainer">
-          <form id="messageForm" style="display: none;">
+    <div id="responseContainer">
+      <p class="api-key-note">
+        API Keyは<a href="https://platform.openai.com/account/api-keys" target="_blank" rel="noopener noreferrer">こちら</a>から取得できます。
+      </p>
+    </div>
+    <div id="apiKeyContainer">
+      <form id="apiKeyForm">
+        <input type="password" id="apiKeyInput" placeholder="YOUR OPENAI API KEY" />
+        <button type="submit">Set</button>
+      </form>
+    </div>
+    <div id="messageContainer">
+      <form id="messageForm" style="display:none;">
             <input id="messageInput" type="text" placeholder="YOUR MESSAGE"/>
-            <button type="submit">Send</button>
+            <button type="submit"><span class="arrow-icon">➤</span></button>
           </form>
         </div>
   </body>
